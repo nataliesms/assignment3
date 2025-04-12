@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sin</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    
+<script>
+function randomNumber(min,max){
+    return Math.random() * (max-min)+min;
+
+}
+let divs = document.querySelectorAll(".grid-containerdiv");
+function randomize(){
+
+    divs.forEach(function(div){
+        let scale = randomNumber(.5,1.2);
+        let translateX = randomNumber(0,50);
+        let translateY = randomNumber(0,20);
+        let rotate = randomNumber(0,360);
+        div.style.transform = 
+        `scale(${scale})
+        translate(${translateX}%, ${translateY}%)
+        rotate(${rotate}deg)`;
+    })
+}
+
+document.addEventListener("click",randomize);
+</script>
+
+<div class"grid-container">
+    <div>human</div>
+    <div>greed</div>
+    <div>wet</div>
+    <div class = "last">rain</div>
+    <div>destroy</div>
+    <div>decay</div>
+    <div>rot</div>
+    <div>or</div>
+    <div class = "last">ripe</div>
+    <div>ruminate</div>
+    <div class="last">ruin</div>
+</div>
+
+</body>
+</html>
