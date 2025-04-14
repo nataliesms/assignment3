@@ -7,10 +7,10 @@ html{
 body{
     margin:1rem;
     background-color: black;
-    background-image: bg.gif;
+    background-image: assets/bg.gif;
     background-repeat:no-repeat;
     color: whitesmoke;
-    font-size: 5rem;
+    font-size: 2rem;
     overflow:hidden;
  
 }
