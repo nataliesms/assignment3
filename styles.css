@@ -6,7 +6,7 @@ html{
 
 body{
     margin:1rem;
-    background-image: assets/bg.gif;
+    background-image: ("../assets/bg.gif");
     background-repeat:no-repeat;
     color: whitesmoke;
     font-size: 50px;
